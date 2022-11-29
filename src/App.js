@@ -1,9 +1,10 @@
-import './App.css';
+import './css/App.css';
+import Top from "./pages/Top"
 
 function App() {
   return (
     <div className="App">
-      <p>テストメッセージ</p>
+       <Top />
     </div>
   );
 }
