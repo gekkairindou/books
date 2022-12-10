@@ -11,22 +11,37 @@
     box-sizing: border-box;
 }
 
+/* ヘッダー */
 .Header {
     background-color: #5a996f;
     height: 70px;
 }
 
-.Header .HeaderUnder {
+.Header h2 {
+    color: #b3ffc8;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-family: "Hannari";
+    font-size: 30px;
+}
+
+.HeaderUnder {
     width:100%;
     height: 20px;
     background-color: #ffffff;
 }
 
+/* サイドバー */
 .Sideber {
     height: 100%;
     width: 250px;
     box-sizing: border-box;
     background-color: #5a996f;
+}
+
+.SideberRight {
+    height: 100%;
+    width: 20px;
 }
 
 .SideberList {
@@ -51,7 +66,7 @@
 
 .SideberList .row:hover {
     cursor: pointer;
-    background-color: #5a9999;
+    background-color: #78cc94;
 }
 
 .row #icon {
@@ -64,6 +79,7 @@
     flex:70%;
 }
 
+/* メイン要素 */
 .main {
     display: flex;
     flex-direction: row;
@@ -80,4 +96,27 @@
     flex-grow: 1;
     background-color: #b8e6c5;
     box-sizing: border-box;
+}
+
+/* アプリ一覧用 */
+.AppList .AppRow {
+    width: 100%;
+    height: 60px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AppList .AppRow:hover {
+    cursor: pointer;
+    background-color: #5a9999;
+}
+
+/* 戻るボタン用 */
+.back {
+    cursor: pointer;
+    text-decoration:underline;
+    display: flex;
+    background-color: aqua;
 }
