@@ -3,6 +3,7 @@ import { SideberData } from "./SideberData"
 
 function Sideber() {
   return (
+    <>
     <div className="Sideber">
         <ul className="SideberList">
             {SideberData.map((value, key) => {
@@ -15,12 +16,14 @@ function Sideber() {
                     }}
                     >
                         <div id="icon">{value.icon}</div>
-                        <div id="title">{value.title}</div>
+                        <div id="title"><p>{value.title}</p></div>
                     </li>
                 )
             })}
         </ul>
     </div>
+    <div className="SideberRight"></div>
+    </>
   )
 }
 
