@@ -1,5 +1,4 @@
 import React from 'react'
-import Back from '../components/Back'
 
 function Credit() {
   return (

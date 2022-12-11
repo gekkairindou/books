@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Back() {
+function Back(props) {
 
   return (
     <>
@@ -8,7 +8,7 @@ function Back() {
             <li 
             className="back" 
             onClick={() => {
-                window.location.pathname = "/app";
+                window.location.pathname = props.url;
             }}
             >
               <div id="title"><p>戻る</p></div>

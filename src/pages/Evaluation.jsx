@@ -1,5 +1,5 @@
 import React from 'react'
-import Back from '../components/Back'
+import Back from '../components/atoms/Back'
 
 function Evaluation() {
   return (
@@ -7,7 +7,7 @@ function Evaluation() {
     <div className="content">
         <div className="flex-content">
             Evaluation
-            <Back />
+            <Back url="/app" />
         </div>
     </div>
     </>
