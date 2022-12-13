@@ -1,5 +1,5 @@
 import React from 'react'
-import Back from '../components/atoms/Back'
+import Back from '../../components/atoms/Back'
 
 function Evaluation() {
   return (

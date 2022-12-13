@@ -1,5 +1,5 @@
 import React from 'react'
-import { AppLink } from "../components/AppLink"
+import { AppLink } from "../../components/AppLink"
 
 function AppHome() {
   return (
