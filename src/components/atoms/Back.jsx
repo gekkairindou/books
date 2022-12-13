@@ -3,18 +3,15 @@ import React from 'react'
 function Back(props) {
 
   return (
-    <>
-       <ul>
-            <li 
-            className="back" 
-            onClick={() => {
-                window.location.pathname = props.url;
-            }}
-            >
-              <div id="title"><p>戻る</p></div>
-            </li>
-        </ul>
-    </>
+      <div 
+        className="back" 
+        id="title" 
+        onClick={() => {
+            window.location.pathname = props.url;
+        }}
+        >
+          戻る
+      </div>
   )
 }
 

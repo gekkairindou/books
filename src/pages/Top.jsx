@@ -4,9 +4,9 @@ import Sideber from '../components/Sideber'
 import { Routes, Route } from "react-router-dom"
 import Home from "../pages/Home"
 import Overview from './Overview'
-import AppHome from './AppHome'
-import Evaluation from './Evaluation'
-import Theme from './Theme'
+import AppHome from './app/AppHome'
+import Evaluation from './app/Evaluation'
+import Theme from './app/Theme'
 import Credit from './Credit'
 
 function Top() {

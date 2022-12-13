@@ -1,9 +1,4 @@
-import React, { useState } from 'react'
-import Back from '../components/atoms/Back'
-
-function Theme() {
-  const [token, setToken] = useState("");
-  const handleToken = () => {
+exports.getRandToken = () => {
     const token = [
       "三日月宗近","三日月宗近・極","小狐丸", "小狐丸・極", "石切丸", "石切丸・極",
       "岩融", "岩融・極", "今剣", "今剣・極", "大典太光世", "ソハヤノツルキ", "数珠丸恒次",
@@ -31,21 +26,5 @@ function Theme() {
       "叢雲江", "姫鶴一文字", "福島光忠", "七星剣", "稲葉江", "笹貫"
     ]
     const newToken = token[Math.floor(Math.random() * token.length)];
-    setToken("今日のお題は「" + newToken + "」です。");
+    return "今日のお題は「" + newToken + "」です。";
   }
-
-  return (
-    <>
-    <div className="content">
-      <div className="flex-content">
-        <h2>お題メーカー</h2>
-        <button onClick={handleToken}>お題を出す</button>
-        <div>{token}</div>
-        <Back url="/app" />
-      </div>
-    </div>
-    </>
-  )
-}
-
-export default Theme
