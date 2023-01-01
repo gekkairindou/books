@@ -13,6 +13,11 @@
 
 @font-face {
     font-family: 'onion';
+    src: url('../materials/fonts/tamanegi_kaisho_free.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'onion_sp';
     src: url('../materials/fonts/玉ねぎ楷書激無料版v6.ttf') format('truetype');
 }
 
