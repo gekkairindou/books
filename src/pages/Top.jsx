@@ -1,13 +1,7 @@
 import React from 'react'
 import Header from '../components/Header'
 import Sideber from '../components/Sideber'
-import { Routes, Route } from "react-router-dom"
-import Home from "../pages/Home"
-import Overview from './Overview'
-import AppHome from './app/AppHome'
-import Evaluation from './app/Evaluation'
-import Theme from './app/Theme'
-import Credit from './Credit'
+import { Routing } from '../components/Routing'
 
 function Top() {
   return (
@@ -15,14 +9,7 @@ function Top() {
         <Header />
         <main className="main">
           <Sideber />
-          <Routes>
-              <Route path="/home" element={<Home />} />
-              <Route path="/overview" element={<Overview />} />
-              <Route path="/App" element={<AppHome />} />
-              <Route path="/App/theme" element={<Theme />} />
-              <Route path="/App/evaluation" element={<Evaluation />} />
-              <Route path="/credit" element={<Credit />} />
-          </Routes>
+          <Routing />
         </main>
     </>
   )
