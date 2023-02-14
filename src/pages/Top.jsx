@@ -3,13 +3,14 @@ import Header from '../components/Header'
 import Sideber from '../components/Sideber'
 import { Routing } from '../components/Routing'
 import { SideberLinkData } from '../components/SideberData';
+import { SideberData } from "../components/SideberData";
 
 function Top() {
   return (
     <>
         <Header />
         <main className="main">
-          <Sideber />
+          <Sideber sideberData={SideberData} />
           <Routing routeDate={SideberLinkData} />
         </main>
     </>
