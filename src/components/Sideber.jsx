@@ -1,12 +1,11 @@
 import React from 'react'
-import { SideberData } from "./SideberData"
 
-function Sideber() {
+function Sideber(props) {
   return (
     <>
     <div className="Sideber">
         <ul className="SideberList">
-            {SideberData.map((value, key) => {
+            {props.sideberData.map((value, key) => {
                 return (
                     <li key={key} 
                     className="row" 
